@@ -1,3 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
 aliLGD.iml
+Main/target
+Main/Main.iml

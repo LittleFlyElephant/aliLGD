@@ -16,10 +16,8 @@ public class DataBase {
     }
 
     public static DataBase getInstance(){
-        if (dataBase != null) return dataBase;
-        else {
-            return new DataBase();
-        }
+        if (dataBase == null) dataBase = new DataBase();
+        return dataBase;
     }
 
     public void connect(){
