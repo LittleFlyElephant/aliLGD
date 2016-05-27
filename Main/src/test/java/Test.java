@@ -1,4 +1,5 @@
 import database.DataBase;
+import logic.cr_main.LogicCR;
 import po.ActionPO;
 import po.SongPO;
 import util.CommonUtil;
@@ -48,5 +49,25 @@ public class Test {
         songs.forEach(e -> {
             System.out.println(e.getSong_id() + " -- " + e.getPublish_time().get(Calendar.YEAR));
         });
+    }
+
+    @org.junit.Test
+    public void testLogic() throws Exception {
+        LogicCR logic = new LogicCR();
+        logic.initArtists();
+        logic.test();
+    }
+
+    @org.junit.Test
+    public void addDate() throws Exception {
+        String before = "201510";
+        DataBase database = DataBase.getInstance();
+        for (int i = 1; i <=31 ; i++) {
+            String time = before;
+            if (i<10) time += "0"+i;
+            else time += i;
+            String sql = "INSERT INTO date(time) VALUES ('"+time+"')";
+            database.excute(sql);
+        }
     }
 }

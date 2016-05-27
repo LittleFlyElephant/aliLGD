@@ -13,7 +13,7 @@ public class TimeUtil {
         cal.set(Calendar.DATE, i);
         time /= 100;
         i = time % 100;
-        cal.set(Calendar.MONTH, i);
+        cal.set(Calendar.MONTH, i-1);
         time /= 100;
         cal.set(Calendar.YEAR, time);
         return cal;
