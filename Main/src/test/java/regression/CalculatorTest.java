@@ -1,6 +1,6 @@
 package regression;
 
-import logic.regression.Coefficient;
+import logic.highorder.Coefficient;
 
 import java.math.BigDecimal;
 

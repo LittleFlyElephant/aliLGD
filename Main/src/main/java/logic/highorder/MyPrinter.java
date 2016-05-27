@@ -1,4 +1,4 @@
-package logic.regression;
+package logic.highorder;
 
 /**
  * Created by darxan on 2016/5/24.

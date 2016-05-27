@@ -1,4 +1,4 @@
-package logic.regression;
+package logic.highorder;
 
 import java.math.BigDecimal;
 /**

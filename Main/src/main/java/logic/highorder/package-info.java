@@ -21,4 +21,9 @@
  *             ]   *  Transform_predict_date(predict_date) * weight_language(language)
  *
  */
-package logic.regression;
+package logic.highorder;
+
+/**
+ * 考虑的因素：
+ *          某一用户对某一首歌播放量越多，可能会导致听腻。
+ */

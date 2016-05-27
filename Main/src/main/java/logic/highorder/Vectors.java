@@ -1,4 +1,4 @@
-package logic.regression;
+package logic.highorder;
 
 import util.ParameterType;
 
@@ -7,12 +7,14 @@ import java.util.Map;
 /**
  * Created by darxan on 2016/5/24.
  *
- * Predicate = history_transfer[   sigma(
+ * Predicate = history_transfer
+ *          [   sigma(
  *              action_weight  * user_weight(user_id)
  *              * gmt_create_weight(gmt_create) * ds_weight(Ds)
  *             )
- *             ]   *  predict_date(predict_date) * weight_language(language) * wight_artist
- *
+ *             ]   *
+ *             predict_date(predict_date) * weight_language(language) * wight_artist
+ *T(init_time)* T2()
  * */
 public class Vectors {
     private Coefficient history_transfer;
